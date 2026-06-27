@@ -35,6 +35,7 @@ If Apache is already running on another port, stop that service or change the XA
 - `tests/php/` - PHPUnit tests for PHP validation.
 - `.github/workflows/ci.yml` - Continuous Testing and Security as Code pipeline.
 - `docs/` - technical review and security documentation.
+- `docs/submission/` - final submission screenshots and link summary.
 
 ## Running Locally
 
@@ -109,3 +110,10 @@ Security checks are automated in CI:
 - ESLint with `eslint-plugin-security` checks JavaScript security patterns.
 - Gitleaks scans the Git history and working tree for secrets.
 - OWASP Dependency Check scans dependencies and blocks critical vulnerability findings.
+
+## Submission Evidence
+
+- [Submission summary](docs/submission/SUBMISSION.md)
+- [Working XAMPP localhost page](docs/submission/01-xampp-localhost.png)
+- [Successful PHP challenge page](docs/submission/02-php-success.png)
+- [Green GitHub Actions run](docs/submission/03-github-actions-green.png)
