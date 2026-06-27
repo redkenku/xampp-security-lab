@@ -1,49 +1,19 @@
 {
-    "title": "Clean Blog",
-    "name": "startbootstrap-clean-blog",
-    "version": "5.0.7",
-    "scripts": {
-        "start": "node_modules/.bin/gulp watch"
-    },
-    "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/clean-blog",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.9.0",
-        "bootstrap": "4.3.1",
-        "jquery": "3.4.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "del": "4.1.1",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "6.1.0",
-        "gulp-clean-css": "4.2.0",
-        "gulp-header": "2.0.7",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
-    }
+  "name": "xampp-security-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "XAMPP web app lab with JavaScript/PHP fixes, tests, CI, and Security as Code.",
+  "license": "MIT",
+  "scripts": {
+    "test": "npm run test:js",
+    "test:js": "jest --runInBand",
+    "lint:js": "eslint script.js tests/js/**/*.js",
+    "security:js": "eslint script.js tests/js/**/*.js --max-warnings=0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-plugin-security": "^2.1.1",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1"
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "redkenku/xampp-security-lab",
+  "description": "PHP validation and tests for the XAMPP security lab.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "files": [
+      "src/PassAccept.php"
+    ]
+  },
+  "config": {
+    "bin-dir": "php-vendor/bin",
+    "vendor-dir": "php-vendor"
+  },
+  "scripts": {
+    "analyse:php": "php-vendor/bin/phpstan analyse --configuration phpstan.neon",
+    "test:php": "php-vendor/bin/phpunit --configuration phpunit.xml"
+  }
+}
