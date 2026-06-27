@@ -1,0 +1,6 @@
+[allowlist]
+description = "Intentional lab challenge values supplied by the exercise."
+regexes = [
+  '''VGgxNV8xNV81VFIwbjY=?''',
+  '''Th15_15_5TR0n6'''
+]
